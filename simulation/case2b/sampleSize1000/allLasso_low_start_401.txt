@@ -1,0 +1,8 @@
+#!/bin/sh
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=tkzhou@umich.edu
+#SBATCH --time=12-10:00:00
+
+#SBATCH --workdir=/home/tkzhou/PSPP_Project/PENCOMP_OneTimePoint/variableSelection5/case2b/sampleSize1000/
+#SBATCH --job-name=varSelsample1000_allLasso
+R CMD BATCH allLasso_low_start_401.R
